@@ -1,3 +1,76 @@
 .nav-link {
     font-size: 25pt !important;
 }
+
+
+.custom-link {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #5d5178 50%,
+      #c3aa7e 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #092355;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  .custom-link:before {
+    content: '';
+    background: #c3aa7e;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  .custom-link:hover {
+    background-position: 0;
+    -webkit-text-fill-color: #7b75bb; /* Add this line to change the text color on hover */
+  }
+  
+  .custom-link:hover::before {
+    width: 100%;
+  }
+  
+
+
+  .center-column {
+    text-align: center;
+  }
+
+  .col-8, .col-4 {
+  height: 650px; /* Set a fixed height for the columns */
+}
+
+
+.home-p {
+    font-size: 15pt;
+}
+
+
+img.img-resize {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    img.img-resize {
+        display: none;
+    }
+}
+
+
+footer{
+    height: 500px;
+    background-color: #adb5bd;
+}
