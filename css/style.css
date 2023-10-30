@@ -59,18 +59,72 @@
 }
 
 
-img.img-resize {
-    display: block;
+@media (max-width: 1200px) {
+  .col-md-3, .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
-@media (max-width: 600px) {
-    img.img-resize {
-        display: none;
-    }
+.img-resize {
+  max-width: 100%; /* Adjust the value as needed */
+  height: auto;
+}
+
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+.img-rotate {
+  transform: rotate(180deg);
+}
+
+.img-shrink {
+  max-width: 100%; /* Adjust the value as needed */
+  height: auto;
 }
 
 
 footer{
     height: 500px;
     background-color: #adb5bd;
+}
+
+
+
+@media (max-width: 1200px) {
+  .col-md-3, .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center !important;  /* Center align text on smaller screens */
+  }
+  
+  /* Center align text for specific paragraphs */
+  .text-center p {
+    text-align: center !important; /* Apply center alignment for paragraphs in the 'text-center' class */
+  }
+}
+
+
+.navbar-brand {
+  display: none;
+}
+
+/* Display the .navbar-brand in mobile view */
+@media (max-width: 991px) {
+  .navbar-brand {
+    display: block;
+  }
+}
+
+footer {
+  height: auto; /* Adjust the height as needed */
+  background-color: #adb5bd; /* Add your desired background color */
 }
