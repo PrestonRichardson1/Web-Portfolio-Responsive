@@ -1,303 +1,170 @@
-/* CSS Document */
-@font-face {
-	font-family: "Tahu";
-	src: url(../Tahu.ttf);
-}
-body {
-	text-align: center !important;
-
-}
-/*
-.title-logo {
-	font-family: "Tahu"!important;
-	font-weight: 500!important;
-	font-size: 50pt!important;
-	margin-top: -15px!important;
-}
-*/
-
-.title-logo {
-	font-family: 'Permanent Marker', cursive;
-font-family: 'Style Script', cursive;
-font-weight: 500!important;
-	font-size: 50pt!important;
-	margin-top: -5px!important;
-}
-
-.free-shipping {
-	background-color: black;
-	color: white;
-	
-}
-
-p {
-	font-size: 15pt !important;
-}
-
-#product1 {
-	text-align:center;
-	
-}
-
-#product1 .feat-container {
-	
-	display: flex;
-	justify-content: space-between;
-	padding-top:20px;
-	flex-wrap: wrap;
-	margin-left: 20px;
-	margin-right: 20px;
+.nav-link {
+    font-size: 25pt !important;
 }
 
 
+.custom-link {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #5d5178 50%,
+      #c3aa7e 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #092355;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  .custom-link:before {
+    content: '';
+    background: #c3aa7e;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  .custom-link:hover {
+    background-position: 0;
+    -webkit-text-fill-color: #7b75bb; /* Add this line to change the text color on hover */
+  }
+  
+  .custom-link:hover::before {
+    width: 100%;
+  }
+  
 
-#product1 .product {
-	width: 23%;
-	min-width: 250px;
-	padding: 10px 12px;
-	border: 1px solid #cce7d0;
-	border-radius: 25px;
-	
-	box-shadow: 20px 20px 30px rgba(0,0,0, 0.02);
-	margin: 15px 0;
-	transition: 0.2s ease;
-	position: relative;
-	
-}
 
-#product1 .product:hover{
-	box-shadow: 20px 20px 30px rgba(0,0,0, 0.09);
-}
+  .center-column {
+    text-align: center;
+  }
 
-#product1 .product img {
-	width: 100%;
-	border-radius: 20px;
-}
-
-#product1 .product .product-description {
-	text-align: start;
-	padding: 5px 0;
-}
-#product1 .product .product-description span{
-	color: #AF090B;
-	font-size: 20px;
-}
-
-#product1 .product .product-description .product-name {
-	padding-top: 2px;
-	font-size: 25pt !important;
-	color: #1a1a1a;
-}
-#product1 .product .product-description .star-rating i {
-	font-size: 20px;
-	color: #AF090B;
-	
-}
-
-#product1 .product .product-description .price {
-	font-weight: 700;
-	font-size: 20pt !important;
-	
-}
-#product1 .product .cartlogo {
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 50px;
-	background-color: #E98F90;
-	border: 1px solid;
-	position: absolute;
-	bottom: 20px;
-	right: 10px;
-	cursor: pointer;
+  .col-8, .col-4 {
+  height: 650px; /* Set a fixed height for the columns */
 }
 
-.footer-information {
-	background-color: black;
-	margin: 0;
-	padding:0;
+
+.home-p {
+    font-size: 15pt;
 }
 
-.email-signup {
-	color:#ffffff;
-	font-size: 16pt;
+
+@media (max-width: 1200px) {
+  .col-md-3, .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
-.email-signup-header{
-	color:#ffffff;
-	font-size: 22pt;
+.img-resize {
+  max-width: 100%; /* Adjust the value as needed */
+  height: auto;
 }
 
-.emailsignup {
-	width: 300px;
-}
-.footer-links {
-	display: flex;
-	justify-content:space-between;
-	
-	font-size: 20pt !important;
-	padding-right: 200px !important;
-	padding-left: 200px !important;
-	line-height: 27px;
-}
-.mission, .links, .socials{
-	font-size: 13pt !important;
-	max-width: 500px;
-	border: solid 2px;
-	padding: 20px;
-}
-	
-.product-page1 {
-	display: flex;
-	border: solid 2px #AF090B;
-	
+
+.text-left {
+  text-align: left;
 }
 
-.product-photo {
-	width: 600px;
-	margin-right: 125px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: solid 2px #AF090B;
-
+.text-right {
+  text-align: right;
 }
 
-.product-sidebar-photos {
 
+.img-rotate {
+  transform: rotate(180deg);
 }
 
-.product-sidebar-photo1 {
-	display: flex;
-	justify-content: center;
-	width: 100px;
-	height: 100px;
-	margin-left: 25px;
-	margin-right: 20px;
-	margin-top: 25px;
-	border: solid 2px #AF090B;
-	cursor: pointer;
-	
+.img-shrink {
+  max-width: 100%; /* Adjust the value as needed */
+  height: auto;
 }
 
-.product-page-title {
-	margin-top: 20px;
-	font-family: 'Permanent Marker', cursive;
-font-family: 'Style Script', cursive;
-	font-weight: 500!important;
-	font-size: 40pt !important;
+
+
+
+
+@media (max-width: 1200px) {
+  .col-md-3, .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center !important;  /* Center align text on smaller screens */
+  }
+  
+  /* Center align text for specific paragraphs */
+  .text-center p {
+    text-align: center !important; /* Apply center alignment for paragraphs in the 'text-center' class */
+  }
 }
 
-.product-page-description {
 
+.navbar-brand {
+  display: none;
 }
 
-.product-information {
-	max-width: 350px
-}
-
-.carousel-inner {
-	border-radius: 40px;
+/* Display the .navbar-brand in mobile view */
+@media (max-width: 991px) {
+  .navbar-brand {
+    display: block;
+  }
 }
 
 footer {
-	margin:0;
-	padding:0;
-	height:100px;
+  height: auto; /* Adjust the height as needed */
+  background-color: #adb5bd; /* Add your desired background color */
 }
 
 
+/*  
+Removed the custom .container class. Container is a reserved class for bootstrap :)
+*/
 
-
-.faq-main {
-	display: flex;
-	justify-content: space-between;
-	padding-left: 100px;
-	padding-right: 100px;
-	
+.choice{
+  height: 200px;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  float:left;
+  align-items: center;
+  transition: width 0.2s;
+  border-radius:3px;
 }
-.faq-headers {
-	color: #af1f24;
-	font-size: 18pt !important;
+.expand{
+  width: 65%;
 }
-
-.faq-text {
-	padding-right: 5%;
-	padding-left: 5%;
-	font-size: 16pt !important;
+.unset{
+  width: 16%;
+  color: black !important;
+  background-color: #ddd !important;
 }
-
-ul {
-	list-style-image: url("/images/logocrown.png");
-  }
-
-  .center-ul {
-	text-align: center; /* Center the text within the UL */
-	padding: 0; /* Remove any padding */
-	margin: 0; /* Remove any margin */
-	list-style-position: inside; /* Position the list item markers inside the UL */
-  }
-
-  .royalred {
-	color:#600a0d;
-  }
-
-.col-md-6 {
-	border: solid #600a0d right 1px;
+.small{
+  width: 5%;
+  background-color: #ddd !important;
+}
+.small>div{
+  opacity: 0;
+}
+.unset > div > p{
+  opacity: 0;
+}
+.expand > div {
+  transition-delay: 200ms;
+  opacity: 1;
 }
 
-.product-cart-logo {
-	width: 400px;
-	height: 75px;
-	line-height: 90px;
-	border-radius: 50px;
-	background-color: #E98F90;
-	border: 1px solid;
-	position: absolute;
-	bottom: 0px;
-	right: 375px;
-	cursor: pointer;
-}	
-.cartlogo-2 {
-	font-size: 25pt;
+.horizontal-accordion {
+
+  text-align: center;
+  padding-left: 50px;
 }
-
-.indextext {
-	margin-top: 20px;
-}
-
-
-
-  /* Sidebar */
-.sidebar {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	padding: 235px 0 0; /* Height of navbar */
-	box-shadow: 0 4px 5px 0 rgb(0 0 0 / 5%), 0 4px 10px 0 rgb(0 0 0 / 5%);
-	width: 240px;
-	z-index: 600;
-	}
-	
-	@media (max-width: 991.98px) {
-	.sidebar {
-	width: 100%;
-	}
-	}
-	.sidebar .active {
-	border-radius: 5px;
-	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-	}
-	
-	.sidebar-sticky {
-	position: relative;
-	top: 0;
-	height: calc(100vh - 48px);
-	padding-top: 0.5rem;
-	overflow-x: hidden;
-	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-	}
-
-	.nav-link{
-		font-size: 15pt !important;
-	}

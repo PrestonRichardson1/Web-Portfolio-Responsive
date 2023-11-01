@@ -1,3 +1,10 @@
+body {
+  background-color: rgb(41, 55, 66) !important;
+  color: white !important;
+}
+
+
+
 .nav-link {
     font-size: 25pt !important;
 }
@@ -113,6 +120,10 @@ footer{
 }
 
 
+.backgroundcolor{
+  background-color: #A0ABD3;
+}
+
 .navbar-brand {
   display: none;
 }
@@ -129,20 +140,21 @@ footer {
   background-color: #adb5bd; /* Add your desired background color */
 }
 
-.container{
-  display: flex;
-  width: 100%;
-  padding: 0;
-}
+
+/*  
+Removed the custom .container class. Container is a reserved class for bootstrap :)
+*/
+
 .choice{
-  height: 180px;
+  height: 400px;
   box-sizing: border-box;
   padding: 0;
   overflow: hidden;
-  float: left;
+  float:left;
   align-items: center;
   transition: width 0.2s;
   border-radius:3px;
+  margin-top: 10px
 }
 .expand{
   width: 65%;
@@ -165,4 +177,11 @@ footer {
 .expand > div {
   transition-delay: 200ms;
   opacity: 1;
+}
+
+.horizontal-accordion {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
