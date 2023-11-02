@@ -145,43 +145,9 @@ footer {
 Removed the custom .container class. Container is a reserved class for bootstrap :)
 */
 
-.choice{
-  height: 400px;
-  box-sizing: border-box;
-  padding: 0;
-  overflow: hidden;
-  float:left;
-  align-items: center;
-  transition: width 0.2s;
-  border-radius:3px;
-  margin-top: 10px
-}
-.expand{
-  width: 65%;
-}
-.unset{
-  width: 16%;
-  color: black !important;
-  background-color: #ddd !important;
-}
-.small{
-  width: 5%;
-  background-color: #ddd !important;
-}
-.small>div{
-  opacity: 0;
-}
-.unset > div > p{
-  opacity: 0;
-}
-.expand > div {
-  transition-delay: 200ms;
-  opacity: 1;
-}
-
 .horizontal-accordion {
   display:flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   
 }
