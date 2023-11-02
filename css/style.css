@@ -151,3 +151,40 @@ Removed the custom .container class. Container is a reserved class for bootstrap
   flex-wrap: wrap;
   
 }
+
+@media (max-width: 991px) {
+  .hide-nav {
+    display: none; 
+  }
+}
+
+
+
+
+.space-above {
+  padding-top: 15%;
+}
+
+.space-above2 {
+  padding-top: 2%;
+}
+
+@media (max-width: 991px) {
+  .text-right {
+    padding-top:5% !important;
+    padding-bottom:5% !important;
+    text-align: center; 
+  }
+}
+
+@media (max-width: 991px) {
+  .text-left {
+    padding-top:5% !important;
+    padding-bottom:5% !important;
+    text-align: center; 
+  }
+}
+
+.center-cup {
+  text-align: center;
+}
