@@ -1,12 +1,12 @@
-const choiceArray = document.querySelectorAll(".choice")
+document.getElementById("hover").addEventListener("mouseOver", mouseOver);
+document.getElementById("hover").addEventListener("mouseOut", mouseOut);
 
-choiceArray.forEach((card) => {
-    card.addEventListener("click", () => {
-        choiceArray.forEach((element) => {
-            element.classList.remove("expand", "unset")
-            element.classList.add('small')
-        })
-        card.classList.remove("small")
-        card.classList.add('expand')
-    });
-});
+function mouseOver() {
+    document.getElementById("hover").style.opacity = "50%" ;
+
+}
+
+function mouseOut(){
+document.getElementById("hover").style.opacity = "100%";
+
+}
