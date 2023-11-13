@@ -166,5 +166,9 @@ Removed the custom .container class. Container is a reserved class for bootstrap
 .horizontal-accordion {
 
   text-align: center;
-  padding-left: 50px;
+  
+}
+
+.opc {
+  margin-bottom: 20px; /* Adjust the value as needed to increase or decrease the space between cards */
 }
