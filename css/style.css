@@ -206,3 +206,15 @@ font-size: 13px;
 
 
 }
+
+
+.opc{
+  opacity: 50%;
+
+}
+
+.opc:hover{
+
+opacity: 100%;
+
+}
